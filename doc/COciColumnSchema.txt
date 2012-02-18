@@ -1,0 +1,44 @@
+
+*COciColumnSchema*   >> |CDbColumnSchema| >> |CComponent|
+==================
+
+ COciColumnSchema class describes the column meta data of a Oracle table.
+
+
+
+METHOD DETAILS
+------------------------------------------------------------------------------
+
+*COciColumnSchema::extractDefault*				 protected
+>
+ extractDefault($defaultValue)
+<
+(void)
+
+ Extracts the default value for the column. The value is typecasted to correct
+ PHP type.
+    [defaultValue] (mixed) the default value obtained from metadata
+
+
+*COciColumnSchema::extractOraType*				 protected
+>
+ extractOraType($dbType)
+<
+(string) 
+
+ Extracts the PHP type from DB type.
+    [dbType] (string) DB type
+
+
+*COciColumnSchema::extractType* 				 protected
+>
+ extractType($dbType)
+<
+(void)
+
+ Extracts the PHP type from DB type.
+    [dbType] (string) DB type
+
+
+
+ vim:tw=78:ts=8:ft=help:norl:
